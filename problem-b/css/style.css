@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 body {
@@ -8,91 +8,89 @@ body {
     color: white;
 }
 
-nav a{
+nav a {
     color: white;
-    size: 2.5rem;
+    font-size: 2.5rem;   
     margin-right: .5em;
 }
 
-#social-links{
+#social-links {
     display: none;
 }
 
-main{
+main {
     text-align: center;
     font-family: 'Kaushan Script', fantasy;
-    margin-top: 23vh; 
+    margin-top: 23vh;
 }
 
-h1{
+main>h1 {
     font-size: 4rem;
 }
 
-h2{
+main>h2 {
     font-size: 2rem;
     margin-top: 2em;
 }
 
-footer{
+footer {
     display: none;
 }
 
-@media (min-width: 598px){
-    #hamburger-menu{
+@media (min-width: 598px) {
+    #hamburger-menu {
         display: none;
     }
 
-    #social-links{
+    #social-links {
         display: block;
     }
 }
 
-
 @media (min-width: 768px){
-    body{
+    body {
         background-image: url('../img/splash-md.jpg');
         background-position: center;
         background-size: cover;
     }
 
-    html{
-        height: 100%;
-    }
-
-    footer{
+    footer {
         display: block;
         position: fixed;
         bottom: 0;
         right: 0;
     }
 
-    main{
+    html {
+        height: 100%;
+    }
+
+    main {
         text-shadow: 1px 1px #153c43;
     }
 }
 
-    @media (min-width: 992px){
-        body{
-            background-image: url('../img/splash-lg.jpg');
-            
-        }
-        
-        #social-links{
-            font-size: 1.5rem;
-        }
+@media (min-width: 992px) {
 
-        h1{
-            font-size: 5rem;
-        }
-
-        h2{
-            font-size: 3rem;
-        }
+    body {
+        background-image: url('../img/splash-lg.jpg');
     }
 
-    @media (min-width: 1200px){
-        body{
-            background-image: url('../img/splash-xl.jpg');
-        }
+    nav .a {
+        font-size: 1.5rem;
     }
-    
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        background-image: url('../img/splash-xl.jpg')
+    }
+}

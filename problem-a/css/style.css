@@ -1,66 +1,55 @@
-
 body {
   font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
   margin: 0;
   box-sizing: border-box;
-  display: flex;
   height: inherit;
+  display: flex;
   flex-direction: column;
   flex: 1;
 }
 
-.flex-container{
+.flex-container {
   display: flex;
 }
 
-main>.flex-container{
-  height: 100%
-}
-
-.section{
+.flex-item {
   padding: 1em;
 }
 
-.first{
-  flex-basis: 240px;
+main>.flex-container {
+  height: 100%;
 }
 
-.second{
+div>.flex-item:nth-child(1) {
+    flex-basis: 240px;
+}
+
+div>.flex-item:nth-child(2) {
   flex: 1;
   background-color: #eee;
 }
 
-.third{
+div>.flex-item:nth-child(3) {
   flex-basis: 180px;
   flex-shrink: 0;
 }
 
-.second div{
+section>.flex-container {
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.card{
+section>div>div {
   flex: 0 0 250px;
   background-color: white;
   margin: .5rem;
   border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, .16), 0 1px 3px rgba(0, 0, 0, .23);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
 }
 
-.card img{
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+.flex-container>div>p {
+  padding: .5rem 1rem;
 }
-
-.card p{
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-}
-
-body>.flex-container{
+body>.flex-container {
   flex-direction: column;
 }
 
